@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Project</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+    
+.container {
+    background: linear-gradient(to right, rgba(255, 222, 222, 0.8), rgba(222, 244, 255, 0.8));
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Sticky Navbar */
+.navbar {
+    position: sticky; /* Makes it stick to the top */
+    top: 0; /* Aligns it to the very top */
+    z-index: 1020; /* Ensures it stays above other content */
+    background-color: #f8f9fa; /* Background color to match design */
+    transition: all 0.3s ease; /* Smooth appearance when scrolling */
+}
+
+/* General Styling for Navbar (unchanged) */
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.navbar-nav .nav-link {
+    font-size: 1rem;
+    color: #555;
+    padding: 0.5rem 1rem;
+    text-transform: capitalize;
+    transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #007bff;
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: 5px;
+}
+
+
+.navbar-toggler {
+    border: none;
+    outline: none;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=UTF8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%2870, 70, 70, 1%29' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+
+/* Mobile Navigation */
+@media (max-width: 768px) {
+    .navbar-nav {
+        text-align: center;
+        padding: 1rem;
+    }
+
+    .navbar-nav .nav-link {
+        padding: 0.8rem 0;
+        width: 100%; /* Full-width links for better UX on mobile */
+    }
+}
+
+    </style>
+</head>
+
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-gray bg-gray py-1">
+        <div class="container">
+            <a class="navbar-brand" href="#" style="font-size: 1.25rem;">MyWebsite</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#" style="font-size: 0.9rem;">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" style="font-size: 0.9rem;">Features</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#team" style="font-size: 0.9rem;">Pricing</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews" style="font-size: 0.9rem;">Solutions</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer" style="font-size: 0.9rem;">Customers</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#reviews" style="font-size: 0.9rem;">Resources</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#footer" style="font-size: 0.9rem;">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+  
+    
+    <!-- Slider -->
+    <section id="slider" class="py-5">
+        <div class="container">
+          </div>
+    </section>
+
+    <!-- Facilities Section -->
+    <section id="facilities" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Facilities</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Facility 1</h5>
+                            <p class="card-text">Description of facility 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Facility 2</h5>
+                            <p class="card-text">Description of facility 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <div class="card-body">
+                            <h5 class="card-title">Facility 3</h5>
+                            <p class="card-text">Description of facility 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Our Team Section -->
+    <section id="team" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Our Team</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Team Member">
+                        <div class="card-body">
+                            <h5 class="card-title">Member 1</h5>
+                            <p class="card-text">Role of member 1.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Team Member">
+                        <div class="card-body">
+                            <h5 class="card-title">Member 2</h5>
+                            <p class="card-text">Role of member 2.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card text-center">
+                        <img src="https://via.placeholder.com/150" class="card-img-top rounded-circle mx-auto mt-3" alt="Team Member">
+                        <div class="card-body">
+                            <h5 class="card-title">Member 3</h5>
+                            <p class="card-text">Role of member 3.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reviews Section -->
+    <section id="reviews" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">What Our Clients Say</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"Amazing service! Highly recommend."</p>
+                            <h5 class="card-title">- Client 1</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"A wonderful experience from start to finish."</p>
+                            <h5 class="card-title">- Client 2</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <p class="card-text">"Professional and reliable!"</p>
+                            <h5 class="card-title">- Client 3</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="footer" class="bg-dark text-light py-4">
+        <div class="container text-center">
+            <p>&copy; 2025 MyWebsite. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
